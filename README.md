@@ -10,7 +10,7 @@
 aria2c --enable-rpc --rpc-listen-all
 ```
 
-If aria2 is not installed in your local machine then head on to https://aria2.github.io/ and follow the instructions there.
+Если aria2 не установлена ​​на вашем локальном компьютере, перейдите к https://aria2.github.io/ и следуйте инструкциям там.
 
 Then to use the WebUI-Aria2,
 
