@@ -80,8 +80,8 @@ docker build -f Dockerfile.arm32v7 -t yourname/webui-aria2 .
 - Второй — это актуальный контейнер aria2, который вы должны использовать.
 
 <br />
-Prepare the host volume:
-This image required few file to be mounted in the container.
+Подготовьте хост-том:
+Для этого образа требовалось несколько файлов для монтирования в контейнер.
 ```
 /home/aria/aria2/session.txt  (empty file)
 /home/aria/aria2/aria2.log    (empty file)
