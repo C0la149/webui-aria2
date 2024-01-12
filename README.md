@@ -84,13 +84,13 @@ docker build -f Dockerfile.arm32v7 -t yourname/webui-aria2 .
 Для этого образа требовалось несколько файлов для монтирования в контейнер.
 
 ```
-/home/aria/aria2/session.txt  (empty file)
-/home/aria/aria2/aria2.log    (empty file)
-/home/aria/aria2/aria2.conf   (aria2 configuration file, not webui-aria2 conf) must contains at least `enable-rpc=true` and `rpc-listen-all=true`
-/data/downloads/        (where the downloaded files goes)
+/home/aria/aria2/session.txt  (пустой файл)
+/home/aria/aria2/aria2.log    (пустой файл)
+/home/aria/aria2/aria2.conf   (файл конфигурации aria2, а не webui-aria2 conf) должен содержать как минимум `enable-rpc=true` и `rpc-listen-all=true``
+/data/downloads/        (куда идут загруженные файлы)
 ```
 
-Run it
+Запустить его
 
 ```
 docker run --restart=always \
