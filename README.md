@@ -43,41 +43,41 @@ node node-server.js
 # Docker support (Поддержка Докера)
 
 В этом проекте есть два файла Dockerfile, один из них — обычный файл Dockerfile, который можно использовать в **целях тестирования**.<br>
-Второй это **Готовый продуктy** Dockerfile для платформ Arm32v7 (включая Raspberry Pi).
+Второй это **Готовый продукт** Dockerfile для платформ Arm32v7 (включая Raspberry Pi).
 
-### For testing purpose
+### Для целей тестирования
 
-You can also try or use webui-aria2 in your LAN inside a Docker sandbox.
+Вы также можете попробовать использовать webui-aria2 в своей локальной сети внутри песочницы Docker.
 
-Build the image
+Создайте образ
 
 ```bash
 sudo docker build -t yourname/webui-aria2 .
 ```
 
-..and run it! It will be available at: `http://localhost:9100`
+..и запусти! Он будет доступен по адресу: `http://localhost:9100`
 
 ```bash
 sudo docker run -v /Downloads:/data -p 6800:6800 -p 9100:8080 --name="webui-aria2" yourname/webui-aria2
 ```
 
-`/Downloads` is the directory in the host where you want to keep the downloaded files
+`/Downloads` это каталог на хосте, в котором вы хотите хранить загруженные файлы
 
-### Production ready (ARM platform)
+### Готовый продукт (ARM platform)
 
-This image contains both aria2 and webui-aria2.
+Это изображение содержит как aria2, так и webui-aria2.
 
-Build it (may take several hours due to the aria2 compilation process. Don't panic and grab a coffee).
+Создайте его (это может занять несколько часов из-за процесса компиляции aria2. Не паникуйте и выпейте кофе).
 
 ```
 docker build -f Dockerfile.arm32v7 -t yourname/webui-aria2 .
 ```
 
-This command will ends up building three images:
+Эта команда создаст три изображения:
 
-- The first one is just about compiling aria2 and goreman binaries. It MUST be deleted each time the `ARIA2_VERSION` is changed in the Dockerfile, otherwise you won't benefit from the update.
-- The second is about building and downloading some go dependencies (goreman and gosu).
-- The second one is the acutal aria2 container, the one you must use.
+— Первый — это просто компиляция двоичных файлов aria2 и goreman. Его НЕОБХОДИМО удалять каждый раз при изменении `ARIA2_VERSION` в файле Dockerfile, иначе вы не получите пользы от обновления.
+- Второй — о сборке и загрузке некоторых зависимостей Go (goreman и gosu).
+- Второй — это актуальный контейнер aria2, который вы должны использовать.
 
 <br />
 Prepare the host volume:
