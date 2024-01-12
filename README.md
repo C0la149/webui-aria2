@@ -12,10 +12,10 @@ aria2c --enable-rpc --rpc-listen-all
 
 Если aria2 не установлена ​​на вашем локальном компьютере, перейдите к https://aria2.github.io/ и следуйте инструкциям там.
 
-Then to use the WebUI-Aria2,
+Затем, чтобы использовать WebUI-Aria2,
 
-- You can either download this repository and open index.html from `docs` folder.
-- Or you could just head on to https://ziahamza.github.io/webui-aria2 and start downloading files! Once you have visited the URL thanks to [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) you can open the same URL even when you are offline.
+- Вы можете скачать этот репозиторий и открыть index.html из `docs` папки.
+- Или вы могли бы просто отправиться https://ziahamza.github.io/webui-aria2 и начните скачивать файлы! После того, как вы посетили URL-адрес благодаря [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) you can open the same URL even when you are offline.
 - Or you can also use NodeJS to create simple server by using the following command from the project folder.
 
 ```bash
