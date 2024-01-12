@@ -24,11 +24,11 @@ node node-server.js
 
 # Советы
 
-1. Вы всегда можете выбрать, какие файлы скачивать в случае торрентов или металинков. Просто приостановите загрузку, и рядом с кнопкой настроек должен появиться значок списка. Чтобы выбрать файлы для загрузки перед началом загрузки, установите флажок --pause-metadata в aria2. See [link](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption--pause-metadata)
+1. Вы всегда можете выбрать, какие файлы скачивать в случае торрентов или металинков. Просто приостановите загрузку, и рядом с кнопкой настроек должен появиться значок списка. Чтобы выбрать файлы для загрузки перед началом загрузки, установите флажок --pause-metadata в aria2. Смотрите [link](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption--pause-metadata)
 
-# Configuration
+# Конфигурация
 
-Read and edit [configuration.js](src/js/services/configuration.js).
+Читать и редактировать [configuration.js](src/js/services/configuration.js).
 
 ## DirectURL
 
