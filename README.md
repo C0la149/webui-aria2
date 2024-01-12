@@ -32,17 +32,17 @@ node node-server.js
 
 ## DirectURL
 
-This feature allows users to download files that they download from aria2 directly from the webui dashboard. If you are familiar with how webservers work, setup a http server that points at the configured aria2 download directory, check permissions. Then Specify a full url: `http://server:port/` in the webui directURL configuration.
+Эта функция позволяет пользователям загружать файлы, которые они загружают с aria2, прямо с панели управления WebUI. Если вы знакомы с тем, как работают веб-серверы, настройте http-сервер, который указывает на настроенный каталог загрузки aria2, проверьте разрешения. Затем укажите полный URL-адрес: `http://server:port/` в конфигурации webui DirectURL.
 
-If the above is not obvious, keep reading what this is about in [directurl.md](directurl.md)
+Если вышеизложенное не очевидно, продолжайте читать, о чем идет речь в разделе [directurl.md](directurl.md)
 
-# Dependencies
+# Зависимости
 
-Well, you need aria2. And a web browser (if that even counts!)
+Ну, вам нужна aria2. И веб-браузер (если это вообще имеет значение!)
 
-# Docker support
+# Docker support (Поддержка Докера)
 
-There is two Dockerfile in this project, one is a common Dockerfile, which can be use for **testing purpose**.<br>
+В этом проекте есть два файла Dockerfile, один из них — обычный файл Dockerfile, который можно использовать для **testing purpose**.<br>
 The second is a **production ready** Dockerfile for arm32v7 platforms (including Raspberry Pi).
 
 ### For testing purpose
