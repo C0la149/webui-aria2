@@ -2,7 +2,7 @@
 
 ![Main interface](/screenshots/overview.png?raw=true)
 
-The aim for this project is to create the worlds best and hottest interface to interact with aria2. aria2 is the worlds best file downloader, but sometimes the command line brings more power than necessary. The project was initially created as part of the GSOC scheme, however it has rapidly grown and changed with tremendous support and feedback from the aria2 community.
+Цель этого проекта — создать лучший и самый популярный в мире интерфейс для взаимодействия с aria2. aria2 — лучший в мире загрузчик файлов, но иногда командная строка дает больше возможностей, чем необходимо. Первоначально проект создавался как часть схемы GSOC, однако он быстро разросся и изменился благодаря огромной поддержке и отзывам сообщества aria2.
 
 Very simple to use, no build scripts, no installation scripts. First start aria2 in the background either in your local machine or in a remote one. You can do that as follows:
 
