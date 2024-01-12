@@ -22,9 +22,9 @@ aria2c --enable-rpc --rpc-listen-all
 node node-server.js
 ```
 
-# Tips
+# Советы
 
-1. You can always select which files to download in case of torrents or metalinks. Just pause a download and a list icon should appear next to the settings button. To select which files to download before starting the download, give the flag --pause-metadata to aria2. See [link](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption--pause-metadata)
+1. Вы всегда можете выбрать, какие файлы скачивать в случае торрентов или металинков. Просто приостановите загрузку, и рядом с кнопкой настроек должен появиться значок списка. Чтобы выбрать файлы для загрузки перед началом загрузки, установите флажок --pause-metadata в aria2. See [link](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption--pause-metadata)
 
 # Configuration
 
