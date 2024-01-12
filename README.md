@@ -42,8 +42,8 @@ node node-server.js
 
 # Docker support (Поддержка Докера)
 
-В этом проекте есть два файла Dockerfile, один из них — обычный файл Dockerfile, который можно использовать для **testing purpose**.<br>
-The second is a **production ready** Dockerfile for arm32v7 platforms (including Raspberry Pi).
+В этом проекте есть два файла Dockerfile, один из них — обычный файл Dockerfile, который можно использовать в **целях тестирования**.<br>
+Второй это **Готовый продуктy** Dockerfile для платформ Arm32v7 (включая Raspberry Pi).
 
 ### For testing purpose
 
